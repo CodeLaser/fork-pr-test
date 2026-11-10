@@ -1,0 +1,10 @@
+package com.example.shop;
+
+public class Main {
+    public static void main(String[] args) {
+        Cart cart = new Cart();
+        cart.add(250);
+        cart.add(400);
+        System.out.println("Total: " + cart.total());
+    }
+}

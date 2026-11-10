@@ -5,6 +5,6 @@ public class Main {
         Cart cart = new Cart();
         cart.add(250);
         cart.add(400);
-        System.out.println("Total: " + cart.total());
+        System.out.println(new Receipt(cart).format());
     }
 }

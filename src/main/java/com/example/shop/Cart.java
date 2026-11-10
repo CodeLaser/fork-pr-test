@@ -15,6 +15,10 @@ public class Cart {
     }
 
     int cheapest() {
-        return prices.stream().mapToInt(Integer::intValue).min().orElse(0);
+        return lowest(prices);
+    }
+
+    private static int lowest(List<Integer> values) {
+        return values.stream().mapToInt(Integer::intValue).min().orElse(0);
     }
 }

@@ -5,6 +5,8 @@ public class Main {
         Cart cart = new Cart();
         cart.add(250);
         cart.add(400);
+        cart.add(120);
         System.out.println(new Receipt(cart).format());
+        System.out.println("Cheapest item: " + cart.cheapest());
     }
 }

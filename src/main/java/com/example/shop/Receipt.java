@@ -10,9 +10,4 @@ public class Receipt {
     public String format() {
         return "Total: " + cart.total();
     }
-
-    /** The old receipt layout, for applications that still print it. */
-    public String formatLegacy() {
-        return "TOTAL " + cart.total() + " EUR";
-    }
 }
